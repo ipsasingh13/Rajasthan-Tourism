@@ -1,0 +1,21 @@
+Royal-Rajasthan-Tourism/
+│
+├── index.html
+├── login.html
+├── register.html
+├── planner.html
+├── budget.html
+├── chatbot.html
+├── dashboard.html
+├── temples.html
+├── culture.html
+├── village.html
+├── hotels.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+└── js/
+    └── app.js

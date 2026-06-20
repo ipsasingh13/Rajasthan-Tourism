@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Route Planner | Royal Rajasthan Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container section-padding">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card p-4 shadow border-0 bg-white">
+                    <h3 class="royal-font text-maroon mb-3">Route Configurator</h3>
+                    <div class="mb-3">
+                        <label class="form-label">Total Allocated Stay Days</label>
+                        <input type="number" class="form-control" id="planDays" value="3" min="1" max="10">
+                    </div>
+                    <button class="btn btn-royal w-100 text-white" id="generateItineraryBtn">Compute Optimized Route</button>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card p-4 shadow border-0 bg-white h-100" id="itineraryOutputBox">
+                    <h3 class="royal-font text-maroon mb-3">AI Calculated Day Plan</h3>
+                    <p class="text-muted">Click the calculate button to compute optimized roadmap vectors dynamically.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('generateItineraryBtn').addEventListener('click', () => {
+            const days = document.getElementById('planDays').value;
+            let html = `<h3 class="royal-font text-maroon mb-3">Custom Generated Itinerary (${days} Days)</h3>`;
+            for(let i=1; i<=days; i++) {
+                html += `
+                <div class="border-start border-3 border-warning ps-3 mb-3">
+                    <h5>Day ${i}: Optimized Heritage Track & Shrines</h5>
+                    <p class="text-muted small">Curated route management including local strategic asset guidance, traditional craft workshop tours, and ethnic royal fine dining.</p>
+                </div>`;
+            }
+            document.getElementById('itineraryOutputBox').innerHTML = html;
+        });
+    </script>
+</body>
+</html>

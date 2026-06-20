@@ -1,0 +1,191 @@
+/* ==========================================================================
+   ROYAL RAJASTHAN TOURISM SYSTEM FRAMEWORK CSS
+   Colors: Maroon (#5c0612), Deep Deep Maroon (#3b020a), Royal Gold (#D4AF37)
+   ========================================================================== */
+
+:root {
+    --royal-maroon: #5c0612;
+    --deep-maroon: #3b020a;
+    --royal-gold: #D4AF37;
+    --dark-gold: #AA7C11;
+    --light-gold: #fdf8e7;
+    --light-bg: #fdfbf7;
+    --dark-text: #2b2122;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--light-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--royal-maroon);
+    border-radius: 4px;
+}
+
+h1, h2, h3, h4, h5, h6, .royal-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.navbar-royal {
+    background-color: var(--deep-maroon) !important;
+    border-bottom: 3px solid var(--royal-gold);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.navbar-royal .navbar-brand, 
+.navbar-royal .nav-link {
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+.navbar-royal .nav-link:hover {
+    color: var(--royal-gold) !important;
+}
+.dropdown-menu-royal {
+    background-color: var(--royal-maroon);
+    border: 1px solid var(--royal-gold);
+}
+.dropdown-menu-royal .dropdown-item {
+    color: #fff;
+}
+.dropdown-menu-royal .dropdown-item:hover {
+    background-color: var(--royal-gold);
+    color: var(--deep-maroon);
+}
+
+.btn-royal {
+    background: linear-gradient(135deg, var(--royal-gold), var(--dark-gold));
+    color: var(--deep-maroon);
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.btn-royal:hover {
+    background: linear-gradient(135deg, var(--royal-maroon), var(--deep-maroon));
+    color: var(--royal-gold) !important;
+    transform: translateY(-2px);
+}
+.btn-outline-royal {
+    border: 2px solid var(--royal-gold);
+    color: var(--royal-gold);
+    background: transparent;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-outline-royal:hover {
+    background: var(--royal-gold);
+    color: var(--deep-maroon);
+}
+
+.hero-slider .carousel-item {
+    height: 75vh;
+    min-height: 480px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(59, 2, 10, 0.85));
+}
+.carousel-caption {
+    bottom: 25%;
+    z-index: 2;
+}
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+    color: var(--deep-maroon);
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: var(--royal-gold);
+}
+
+.royal-card {
+    border: none;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+}
+.royal-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(92, 6, 18, 0.15);
+}
+.royal-card .card-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+}
+.royal-card .card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+.royal-card:hover .card-img-wrapper img {
+    transform: scale(1.08);
+}
+.royal-card .card-body {
+    border-top: 4px solid var(--royal-gold);
+    padding: 20px;
+}
+
+.weather-widget {
+    background: linear-gradient(135deg, var(--royal-maroon), var(--deep-maroon));
+    color: white;
+    border: 2px solid var(--royal-gold);
+    border-radius: 12px;
+}
+
+.royal-footer {
+    background-color: var(--deep-maroon);
+    color: #e0e0e0;
+    border-top: 5px solid var(--royal-gold);
+    padding: 50px 0 20px 0;
+}
+.royal-footer h5 {
+    color: var(--royal-gold);
+    margin-bottom: 20px;
+}
+.royal-footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.royal-footer a:hover {
+    color: var(--royal-gold);
+}
+.footer-bottom {
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    padding-top: 15px;
+    margin-top: 30px;
+}
